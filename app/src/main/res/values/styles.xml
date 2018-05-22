@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Autocomplete">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+    </style>
+    <style name="fontForNotificationLandingPage">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:padding">2dip</item>
+    </style>
+
+</resources>

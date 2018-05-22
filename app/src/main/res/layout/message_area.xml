@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#5b403a"
+    android:orientation="horizontal">
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="#CFD8DC"
+        android:textColor="#000"
+        android:hint="Type a message..."
+        android:background="@null"
+        android:id="@+id/messageArea"
+        android:padding="10dp"
+        android:maxHeight="80dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:padding="4dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:id="@+id/sendButton"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="3dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    android:id="@+id/messageArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="67dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:hint="Type a message..."
+                    android:maxLines="5"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#b3b3b3"
+                    emojicon:emojiconSize="28sp" />
+                <!-- <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextMessage"
+                    android:layout_toStartOf="@+id/buttonMessage"
+                    android:layout_toRightOf="@+id/buttonEmoji"
+                    android:layout_toEndOf="@+id/buttonEmoji"
+                    emojicon:emojiconSize="28sp"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:id="@+id/imgsmiley"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/smile" />
+
+                        <ImageView
+                            android:id="@+id/imgfgallery"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/gallery" />
+
+                        <ImageView
+                            android:id="@+id/imgcamera"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/camera" />
+
+                        <ImageView
+                            android:id="@+id/imgmore"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/more" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"></LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sendButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/send_msg" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginTop="5dp">
+    <!--android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"-->
+    <!-- <me.himanshusoni.chatmessageview.ChatMessageView
+         android:id="@+id/contentMessageChat"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@+id/ivUserChat"
+         android:layout_toStartOf="@+id/ivUserChat"
+         app:cmv_arrowGravity="end"
+         app:cmv_arrowMargin="5dp"
+         app:cmv_arrowPosition="right"
+         app:cmv_backgroundColor="#c2d75a"
+         app:cmv_backgroundColorPressed="#00000000"
+         app:cmv_contentPadding="10dp"
+         app:cmv_cornerRadius="5dp"
+         android:layout_margin="3dp"
+         app:cmv_showArrow="true">-->
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="#c2d75a"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="10dp"
+        app:cmv_cornerRadius="3dp"
+        android:visibility="visible"
+        app:cmv_showArrow="true">
+
+        <!--  <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+              android:textColor="#fff"
+              android:textIsSelectable="true"
+              android:text="Alessandr sdlsdklsd \n slkdlskdlks \nsdlkslkds dsdso"
+              android:id="@+id/txtMessage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              emojicon:emojiconSize="28sp"
+              android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+      </me.himanshusoni.chatmessageview.ChatMessageView>-->
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:minHeight="100dp"
+            android:minWidth="100dp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_chat"
+            android:layout_marginTop="2dp"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+      <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textSize="15sp"
+            android:text="Alessandr sdlsdklsd \n slkdlskdlks \nsdlkslkds dsdso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="true"
+            emojicon:emojiconSize="28sp"/>
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+   <!-- <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>-->
+</LinearLayout>
